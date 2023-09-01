@@ -369,7 +369,11 @@ template {
   -ms-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-#content-inner,
+#content-inner {
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
+}
 #footer {
   -webkit-animation: bottom-top 1s;
   -moz-animation: bottom-top 1s;
@@ -1897,7 +1901,7 @@ figure.highlight pre .javascript .function {
 #article-container .code-expand-btn:not(.expand-done) ~ table,
 #article-container .code-expand-btn:not(.expand-done) ~ pre {
   overflow: hidden;
-  height: 400px;
+  height: 350px;
 }
 @-moz-keyframes code-expand-key {
   0% {
