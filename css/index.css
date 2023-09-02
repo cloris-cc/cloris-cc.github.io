@@ -1469,6 +1469,7 @@ h6 code {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  border-radius: 8px;
 }
 .table-wrap {
   overflow-x: scroll;
@@ -1544,6 +1545,7 @@ blockquote {
   border-left: 3px solid #49b1f5;
   background-color: var(--blockquote-bg);
   color: var(--blockquote-color);
+  border-radius: 8px;
 }
 blockquote footer cite:before {
   padding: 0 5px;
@@ -2498,6 +2500,7 @@ figure.highlight pre .javascript .function {
   overflow: hidden;
   width: 42%;
   height: 100%;
+  border-radius: 8px;
 }
 @media screen and (max-width: 768px) {
   #recent-posts > .recent-post-item .post_cover {
@@ -2764,6 +2767,7 @@ h1.page-title + .tag-cloud-list {
   overflow: hidden;
   width: 4.2em;
   height: 4.2em;
+  border-radius: 8px;
 }
 #aside-content .aside-list > .aside-list-item .content {
   -webkit-box-flex: 1;
@@ -2805,6 +2809,10 @@ h1.page-title + .tag-cloud-list {
   padding: 0;
   list-style: none;
 }
+#aside-content .card-archives ul.card-archive-list > .card-archive-list-item,
+#aside-content .card-categories ul.card-category-list > .card-category-list-item {
+  border-radius: 8px;
+}
 #aside-content .card-archives ul.card-archive-list > .card-archive-list-item a,
 #aside-content .card-categories ul.card-category-list > .card-category-list-item a {
   display: -webkit-box;
@@ -2826,6 +2834,7 @@ h1.page-title + .tag-cloud-list {
   -o-transition: all 0.4s;
   -ms-transition: all 0.4s;
   transition: all 0.4s;
+  border-radius: 8px;
 }
 #aside-content .card-archives ul.card-archive-list > .card-archive-list-item a:hover,
 #aside-content .card-categories ul.card-category-list > .card-category-list-item a:hover {
@@ -2986,6 +2995,7 @@ h1.page-title + .tag-cloud-list {
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  border-radius: 8px;
 }
 #aside-content #card-toc .toc-content .toc-link:hover {
   color: #49b1f5;
@@ -3353,12 +3363,12 @@ h1.page-title + .tag-cloud-list {
 }
 #footer {
   position: relative;
-  background-color: #49b1f5;
   background-attachment: scroll;
   background-position: bottom;
   background-size: cover;
 }
 #footer:before {
+  border-radius: 8px 8px 0 0;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -3389,7 +3399,6 @@ h1.page-title + .tag-cloud-list {
 #page-header {
   position: relative;
   width: 100%;
-  background-color: #49b1f5;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3400,6 +3409,7 @@ h1.page-title + .tag-cloud-list {
   transition: all 0.5s;
 }
 #page-header:not(.not-top-img):before {
+  border-radius: 0 0 8px 8px;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -3924,6 +3934,7 @@ h1.page-title + .tag-cloud-list {
   margin-top: 40px;
   width: 100%;
   background: #000;
+  border-radius: 8px;
 }
 .layout > .recent-posts .pagination > * {
   display: inline-block;
@@ -4171,6 +4182,7 @@ h1.page-title + .tag-cloud-list {
   -o-transition: box-shadow 0.3s ease-in-out;
   -ms-transition: box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out;
+  border-radius: 8px;
 }
 #post .post-copyright:before {
   position: absolute;
@@ -4240,6 +4252,7 @@ h1.page-title + .tag-cloud-list {
   height: 200px;
   background: #000;
   vertical-align: bottom;
+  border-radius: 8px;
 }
 @media screen and (max-width: 768px) {
   .relatedPosts > .relatedPosts-list > div {
@@ -5795,6 +5808,14 @@ blockquote.pullquote.right {
   z-index: 1000;
   display: none;
   background: rgba(0,0,0,0.6);
+}
+#local-search {
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
+}
+#local-search .search-dialog {
+  border-radius: 8px;
 }
 #local-search .search-dialog .local-search-box {
   margin: 0 auto;
