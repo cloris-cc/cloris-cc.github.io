@@ -1373,7 +1373,7 @@ canvas:not(#ribbon-canvas),
   }
 }
 :root {
-  --global-font-size: 14px;
+  --global-font-size: 15px;
   --global-bg: #fff;
   --font-color: #4c4948;
   --hr-border: #a4d8fa;
@@ -3437,6 +3437,9 @@ h1.page-title + .tag-cloud-list {
   margin: 0;
   color: var(--white);
   font-size: 1.85em;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
 }
 @media screen and (min-width: 768px) {
   #page-header #site-title {
@@ -3769,7 +3772,7 @@ h1.page-title + .tag-cloud-list {
 #nav .menus_items .menus_item {
   position: relative;
   display: inline-block;
-  padding: 0 0 0 14px;
+  padding: 0 0 0 24px;
 }
 #nav .menus_items .menus_item:hover .menus_item_child {
   display: block;
