@@ -3726,9 +3726,9 @@ h1.page-title + .tag-cloud-list {
   }
 }
 #nav.show {
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
 }
 #nav #blog-info {
   -webkit-box-flex: 1;
@@ -5808,11 +5808,6 @@ blockquote.pullquote.right {
   z-index: 1000;
   display: none;
   background: rgba(0,0,0,0.6);
-}
-#local-search {
-  opacity: 0.9;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-  filter: alpha(opacity=90);
 }
 #local-search .search-dialog {
   border-radius: 8px;
